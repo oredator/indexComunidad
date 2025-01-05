@@ -1,0 +1,204 @@
+/* estilos.css */
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 56px; /* Ajustar según la altura de la barra de navegación */
+    background-color: #1a1a1a; /* Fondo gris muy oscuro */
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #2e2e2e; /* Gris oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 100px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centrando el texto */
+}
+
+header h1 {
+    font-size: 2.5rem; /* Tamaño de fuente grande */
+}
+
+header p {
+    font-size: 1.25rem; /* Tamaño de fuente más pequeño para el texto */
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: #3d3d3d; /* Gris oscuro */
+    border-bottom: 2px solid #cccccc; /* Límite inferior gris claro */
+}
+
+.nav-link {
+    color: #ffffff; /* Texto blanco */
+    margin: 0 15px; /* Espaciado horizontal entre enlaces */
+    transition: color 0.3s, transform 0.3s; /* Transición para color y transformación */
+}
+
+.nav-link:hover {
+    color: #ffd700; /* Color dorado al pasar el ratón */
+    transform: scale(1.1); /* Aumentar ligeramente el tamaño al pasar el ratón */
+}
+
+/* Estilos de los contenedores de secciones */
+.card {
+    margin: 20px 0; /* Espaciado vertical entre tarjetas */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s; /* Transición al pasar el ratón */
+    background-color: #444444; /* Color gris medio para los contenedores */
+    color: #ffffff; /* Texto blanco */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada para efecto de elevación */
+}
+
+.card-title {
+    color: #ffffff; /* Color blanco para los títulos */
+    font-size: 1.5rem; /* Tamaño de fuente de título */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+/* Cambiar el color de los títulos a un gris claro */
+.card-title {
+    color: #e0e0e0; /* Color gris claro para los títulos */
+}
+
+/* Estilos para el contenido de las tarjetas */
+.card-content {
+    display: block; /* Cambiado para permitir la animación de altura */
+    height: 0; /* Altura inicial a 0 */
+    overflow: hidden; /* Evitar que el contenido se desborde */
+    transition: height 0.5s ease; /* Transición para la animación de altura */
+    padding: 0 15px; /* Espaciado horizontal */
+    color: #e0e0e0; /* Color gris claro para el contenido */
+}
+
+/* Mostrar contenido */
+.card-content.show {
+    height: auto; /* Dejar que la altura se ajuste automáticamente */
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #2e2e2e; /* Gris oscuro */
+    color: #ffffff; /* Texto blanco */
+    text-align: center; /* Centrando el texto */
+    padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo de los formularios */
+form {
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrando el formulario */
+}
+
+form .form-control {
+    border: 1px solid #cccccc; /* Límite gris claro */
+}
+
+form .btn-primary {
+    background-color: #666666; /* Botón gris medio */
+    color: #ffffff; /* Texto blanco */
+    border: none; /* Sin borde */
+    transition: background-color 0.3s, transform 0.3s; /* Transición para el color de fondo y transformación */
+}
+
+form .btn-primary:hover {
+    background-color: #555555; /* Color más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el ratón */
+}
+
+/* Estilo del botón "Únete Ahora" */
+.btn-light {
+    background-color: #dddddd; /* Fondo gris claro para el botón */
+    color: #444444; /* Texto gris oscuro */
+    transition: background-color 0.3s, transform 0.3s; /* Transición para el color de fondo y transformación */
+}
+
+.btn-light:hover {
+    background-color: #cccccc; /* Fondo gris medio al pasar el ratón */
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el ratón */
+}
+
+/* Estilo de la lista de redes sociales */
+.list-inline-item a {
+    color: #ffffff; /* Texto blanco */
+}
+
+.list-inline-item a:hover {
+    color: #ffd700; /* Color dorado al pasar el ratón */
+}
+
+.image-container {
+    text-align: center; /* Centra la imagen dentro del contenedor */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+.image-container img {
+    max-width: 100%; /* Asegura que la imagen no sobrepase el ancho del contenedor */
+    max-height: 300px; /* Ajusta la altura máxima a 300px (ajusta según sea necesario) */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados para un efecto más suave */
+    margin: 10px 0; /* Agregar margen superior e inferior a las imágenes */
+}
+.custom-button {
+    display: inline-block; /* Permite aplicar padding y margen */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color: #007bff; /* Color de fondo (azul) */
+    color: #fff; /* Color del texto (blanco) */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición suave para el agrandamiento */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+.custom-button:hover {
+    transform: scale(1.1); /* Agranda el botón al pasar el mouse */
+}
+
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Permite que el modal se mantenga en su lugar */
+    z-index: 1; /* Se asegura de que esté por encima del contenido */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Habilita el desplazamiento si es necesario */
+    background-color: rgb(0,0,0); /* Fondo negro */
+    background-color: rgba(0,0,0,0.9); /* Fondo negro con opacidad */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%; /* Ancho de la imagen dentro del modal */
+    max-width: 700px; /* Ancho máximo de la imagen */
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white; /* Color del botón de cerrar */
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb; /* Color al pasar el mouse */
+    text-decoration: none;
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    text-align: center;
+    color: #ccc; /* Color del texto de la descripción */
+    padding: 10px 0;
+}
